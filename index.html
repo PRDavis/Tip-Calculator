@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	      <title>Tip Calculator</title>
+	      <meta charset="utf-8">
+	      <link rel="stylesheet" href="css/style.css">
+        <script src="js/tip-calculator.js"></script>
+    </head>
+
+<body>
+  <h1><p>Tip Calculator</p></h1>
+
+
+  <form>
+    <label>Total w/ tax:</label>
+    <input type="number" name="billTotal" onblur="myFunction()"></input>
+  </br></br>
+    <label>tip %:</label>
+    <input type="number" name="tipPercent" min="0" max="100" value="20" onblur="myFunction()"></input>
+  </br></br>
+    <label>split:</label>
+
+
+    <select name="splitNum">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+</br></br>
+  <label>amount:</label>
+  <output>here is the output</output>
+</br></br>
+<label>    tip:</label>
+<output>here is the tip amount</output>
+
+
+  </form>
+
+
+
+
+
+
+</body>
+</html>
