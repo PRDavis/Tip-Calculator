@@ -3,25 +3,31 @@
     <head>
 	      <title>Tip Calculator</title>
 	      <meta charset="utf-8">
-	      <link rel="stylesheet" href="css/style.css">
+        <!-- Latest compiled and minified bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
         <script src="js/tip-calculator.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
 <body>
+  <div class="container">
   <h1><p>Tip Calculator</p></h1>
 
 
   <form>
     <label>Total w/ tax:</label>
-    <input type="number" name="billTotal" onblur="myFunction()"></input>
+    <input type="number" id="billTotal" onblur="myFunction()"></input>
   </br></br>
     <label>tip %:</label>
-    <input type="number" name="tipPercent" min="0" max="100" value="20" onblur="myFunction()"></input>
+    <input type="number" id="tipPercent" min="0" max="100" value="20" onchange="myFunction()"></input>
   </br></br>
     <label>split:</label>
 
 
-    <select name="splitNum">
+    <select id="splitNum" onchange="myFunction()">
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -35,18 +41,19 @@
   </select>
 </br></br>
   <label>amount:</label>
-  <output>here is the output</output>
-</br></br>
+  <output id="amount"></output>
+</br>
 <label>    tip:</label>
-<output>here is the tip amount</output>
-
-
+<output id="tipOutAmount"></output>
+</br>
+<label>    Total:</label>
+<output id="totalWithTip"></output>
   </form>
 
 
 
 
 
-
+</div>
 </body>
 </html>
