@@ -11,3 +11,12 @@ input{
 h1 {
   color:#dd0c0b;
 }
+input[type="number"] {
+  width:75px;
+}
+*.mainForm {
+float:left;
+}
+.tot {
+  text-align: left;
+}
