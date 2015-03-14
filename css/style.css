@@ -20,3 +20,6 @@ float:left;
 .tot {
   text-align: left;
 }
+.container {
+  margin-left : 15px;
+}
