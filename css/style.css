@@ -2,24 +2,35 @@ body {
   background-color:#222731;
   color:#b3aeac;
 }
+
 output{
   color:#eaec48;
 }
+
 input{
   color:#111217;
 }
+
 h1 {
   color:#dd0c0b;
 }
+
 input[type="number"] {
   width:75px;
 }
+
 *.mainForm {
 float:left;
 }
+
 .tot {
   text-align: left;
 }
+
 .container {
   margin-left : 15px;
+}
+
+.output-amount{
+  font-size: 2em;
 }
