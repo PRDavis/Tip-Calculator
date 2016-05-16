@@ -1,3 +1,17 @@
+var theCheck = {
+
+
+
+
+
+
+
+
+
+
+
+
+
 function myFunction() {
   var billTotal = document.getElementById("billTotal").value;
   var tipPercent=  document.getElementById("tipPercent").value;
@@ -35,3 +49,8 @@ function toCurrency(raw){
 // TODO - change the rounding formula to get rid of erroneous uprounding
 // TODO - finish the responsive work with bootstrap
 // TODO - upload to gh pages and test on mobile devices
+
+
+};
+
+$(ko.applyBindings(theCheck));
