@@ -26,11 +26,11 @@
           <div>
             <div class="row">
               <label class="col-xs-6 label label-primary tot form-label-text">Total</label>
-              <input data-bind = "textInput: myCheck.total()" type="number" class="col-xs-5 form-control input-box" min="0" maxlength="7" size='7' aria-label="Check Amount" id="billTotal" />
+              <input data-bind = "textInput: total" type="number" class="col-xs-5 form-control input-box" min="0" maxlength="7" size='7' aria-label="Check Amount" id="billTotal" />
             </div>
             <div class="row">
               <label class="col-xs-6 form-label-text label label-primary" >Tip %</label>
-              <input type="number" class ="col-xs-5 form-control input-box" id="tipPercent" min="0" max="100" placeholder=20 size='4' onchange="myFunction()"></input>
+              <input data-bind = "textInput: tipPercent" type="number" class ="col-xs-5 form-control input-box" id="tipPercent" min="0" max="100" size='4'></input>
             </div>
             <div class="row">
               <label class="col-xs-6 form-label-text label label-primary">Split</label>

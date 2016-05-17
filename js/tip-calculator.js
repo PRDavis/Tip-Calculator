@@ -1,22 +1,16 @@
-var theCheck = function(){
-self = this;
-
-
+function theCheck(){
 
 
 // this is the data model for the check
 
-  var Check = function(){
-    this.total =ko.observable("20.00");
-    this.tipPercent = ko.observable(20);
+
+    this.total =ko.observable("22.30");
+    this.tipPercent = ko.observable("17.5");
     this.split = ko.observable;
     this.amount = ko.computed;
     this.tipAmount = ko.computed;
     this.totalWithTip = ko.coputed;
-  };
-// instantiate a new check object
-var ourCheck = new Check();
-console.log('here is ourCheck: ', ourCheck);
+
 
 
 
@@ -65,6 +59,6 @@ console.log('here is ourCheck: ', ourCheck);
   // TODO - upload to gh pages and test on mobile devices
 
 
-};
+}
 
-$(ko.applyBindings(theCheck()));
+ko.applyBindings(theCheck());
