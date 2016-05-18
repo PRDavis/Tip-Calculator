@@ -33,7 +33,9 @@ h1 {
 }
 
 .output-amount {
+  background-color: #fff;
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 .form-label-text{
