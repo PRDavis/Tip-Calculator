@@ -34,7 +34,7 @@
             </div>
             <div class="row">
               <label class="col-xs-6 form-label-text label label-primary">Split</label>
-              <select class="col-xs-5 form-control" id="splitNum" onchange="myFunction()">
+              <select data-bind= "textInput: split" class="col-xs-5 form-control" id="splitNum">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -49,15 +49,15 @@
             </div>
             <div class="row">
               <label class="col-xs-6 form-label-text label label-primary">Amount</label>
-              <output class = "output-amount" id="amount"></output>
+              <output data-bind="text: amount" class = "output-amount" id="amount"></output>
             </div>
             <div class="row">
               <label class="col-xs-6 form-label-text label label-primary">Tip</label>
-              <output class = "output-amount" id="tipOutAmount"></output>
+              <output data-bind="text: tipAmount" class = "output-amount" id="tipOutAmount"></output>
             </div>
             <div class="row">
               <label class="col-xs-6 form-label-text label label-primary">Total</label>
-              <output class = "output-amount" id="totalWithTip"></output>
+              <output data-bind="text: totalWithTip" class = "output-amount" id="totalWithTip"></output>
             </div>
           </form>
         </div>
