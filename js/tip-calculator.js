@@ -25,5 +25,6 @@ function theCheck(){
   this.totalWithTip = ko.computed(function(){
     return (Number(this.amount()) + Number(this.tipAmount())).toFixed(2);
   }, this);
+  $('#billTotal').focus(function() { $(this).select(); });
 }
 ko.applyBindings(theCheck());
