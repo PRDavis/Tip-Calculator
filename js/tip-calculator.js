@@ -4,7 +4,7 @@ function theCheck(){
   // this is the data model for the check
 
 
-  this.total =ko.observable("27.58");
+  this.total =ko.observable("");
   this.tipPercent = ko.observable("20");
   this.split = ko.observable("1");
   this.amount = ko.computed(function(){
